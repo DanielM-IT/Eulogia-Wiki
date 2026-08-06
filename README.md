@@ -1,1 +1,1 @@
-# Eulogia-Docs
+# Eulogia-Wiki
