@@ -1,0 +1,95 @@
+/* Eulogia Wiki dark documentation theme */
+
+[data-md-color-scheme="slate"] {
+    --md-hue: 220;
+
+    --md-default-bg-color: #17191e;
+    --md-default-bg-color--light: #1c1f25;
+    --md-default-bg-color--lighter: #22262d;
+    --md-default-bg-color--lightest: #292e36;
+
+    --md-default-fg-color: #f3f4f6;
+    --md-default-fg-color--light: #c4c8d0;
+    --md-default-fg-color--lighter: #959ba6;
+    --md-default-fg-color--lightest: #5d6470;
+
+    --md-primary-fg-color: #101216;
+    --md-primary-fg-color--light: #171a20;
+    --md-primary-fg-color--dark: #090b0e;
+
+    --md-accent-fg-color: #59a8ff;
+    --md-typeset-a-color: #59a8ff;
+
+    --md-code-bg-color: #101216;
+    --md-code-fg-color: #e8eaed;
+}
+
+.md-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.md-tabs {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.md-typeset h1 {
+    font-weight: 700;
+}
+
+.md-typeset h2 {
+    margin-top: 2.2rem;
+    padding-bottom: 0.35rem;
+    border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+/* Documentation tables */
+
+.md-typeset table:not([class]) {
+    width: 100%;
+    border: 1px solid var(--md-default-fg-color--lightest);
+    border-radius: 0.35rem;
+    overflow: hidden;
+}
+
+.md-typeset table:not([class]) th {
+    background-color: var(--md-default-bg-color--lighter);
+    color: var(--md-default-fg-color);
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.md-typeset table:not([class]) td {
+    vertical-align: middle;
+}
+
+.md-typeset table:not([class]) tbody tr:hover {
+    background-color: rgba(89, 168, 255, 0.06);
+}
+
+/* Minecraft compatibility icons */
+
+.item-icon {
+    width: 28px;
+    height: 28px;
+    margin: 1px 4px 1px 0;
+    vertical-align: middle;
+    image-rendering: pixelated;
+}
+
+.item-icon-small {
+    width: 22px;
+    height: 22px;
+    margin-right: 3px;
+    vertical-align: middle;
+    image-rendering: pixelated;
+}
+
+/* Let enchantment tables use the available content width */
+
+.md-typeset__table {
+    width: 100%;
+}
+
+.md-typeset__table table {
+    display: table;
+}

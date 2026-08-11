@@ -1,0 +1,94 @@
+site_name: Eulogia Wiki
+site_description: Documentation for the Eulogia Minecraft server and its custom systems.
+site_url: https://danielm-it.github.io/Eulogia-Wiki/
+
+repo_url: https://github.com/DanielM-IT/Eulogia-Wiki
+repo_name: DanielM-IT/Eulogia-Wiki
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: en
+
+  palette:
+    - scheme: slate
+      primary: black
+      accent: light blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+    - scheme: default
+      primary: black
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - navigation.path
+    - navigation.top
+    - navigation.tracking
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+
+  - pymdownx.details
+  - pymdownx.superfences
+
+  - pymdownx.tabbed:
+      alternate_style: true
+
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Home: index.md
+
+  - Enchantments:
+      - Overview: enchantments/index.md
+      - Complete Enchantment List: enchantments/list.md
+      - Armour: enchantments/armour.md
+      - Weapons: enchantments/weapons.md
+      - Bows and Crossbows: enchantments/bows.md
+      - Tools: enchantments/tools.md
+      - Tridents: enchantments/tridents.md
+      - Fishing: enchantments/fishing.md
+      - Shields: enchantments/shields.md
+      - Elytra: enchantments/elytra.md
+      - Universal: enchantments/universal.md
+
+  - Mechanics:
+      - Overview: mechanics/index.md
+      - Five-Enchant Limit: mechanics/five-enchant-limit.md
+      - Conflicts: mechanics/conflicts.md
+      - Prerequisites: mechanics/prerequisites.md
+      - Enchanted Books: mechanics/enchanted-books.md
+
+  - Commands:
+      - Command Reference: commands/index.md
+
+  - Administration:
+      - Administrator Guide: administration/index.md
