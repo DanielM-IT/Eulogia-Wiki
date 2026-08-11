@@ -24,10 +24,10 @@ Every enchantment on this page can be applied to **Sword** equipment, so the com
 | **Decay** | Has a 4% / 7% / 10% chance to apply Wither I for 3 / 4 / 5 seconds. | III | Ender Bow |
 | **Dexterity** | Increases attack speed by 25% while the exact enchanted weapon is active. | I | — |
 | **Double Strike** | Has a 3% / 5% chance to repeat 100% of the completed original pre-defence hit. | II | — |
-| **Echo** | Has a 5% / 10% chance to deal 50% of the completed original hit after one second. | II | — |
-| **End Affinity** | Deals 20% more direct damage to configured End-origin creatures. | I | Ender Bow |
-| **First Strike** | Deals 10% / 20% / 30% more direct damage to a target at exactly full ordinary health. | III | — |
-| **Frostbite** | Has a 5% / 7.5% / 10% chance to apply Slowness I and freezing pressure. | III | — |
+| <span class="enchant-name"><img src="../../assets/enchantments/echo.webp" alt="" class="enchant-icon"> <strong>Echo</strong></span> | Has a 5% / 10% chance to deal 50% of the completed original hit after one second. | II | — |
+| <span class="enchant-name"><img src="../../assets/enchantments/end_affinity.webp" alt="" class="enchant-icon"> <strong>End Affinity</strong></span> | Deals 20% more direct damage to configured End-origin creatures. | I | Ender Bow |
+| <span class="enchant-name"><img src="../../assets/enchantments/first_strike.webp" alt="" class="enchant-icon"> <strong>First Strike</strong></span> | Deals 10% / 20% / 30% more direct damage to a target at exactly full ordinary health. | III | — |
+| <span class="enchant-name"><img src="../../assets/enchantments/frostbite.webp" alt="" class="enchant-icon"> <strong>Frostbite</strong></span> | Has a 5% / 7.5% / 10% chance to apply Slowness I and freezing pressure. | III | — |
 | **Introversion** | Deals 5% / 10% / 15% more direct damage to genuine enemy players. | III | — |
 | **Kinesis** | Deals up to 10% / 15% / 20% more direct damage from genuine self-propelled movement. | III | — |
 | **Lifesteal** | Has a 12% / 16% / 20% chance to heal 0.5 / 0.75 / 1 health from the original direct hit. | III | Ender Bow |

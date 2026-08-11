@@ -20,9 +20,9 @@ Every enchantment on this page can be applied to **Spear** equipment, so the com
 | **Curse of Misfortune** | Has a 7% / 14% / 21% chance for an eligible block or creature to produce no item drops or XP. | III | Fortune, Looting, Silk Chest, Silk Spawner |
 | **Decapitator** | Eligible defeated entities have a 1% / 2% / 3% chance to drop their head. | III | Ender Bow |
 | **Decay** | Has a 4% / 7% / 10% chance to apply Wither I for 3 / 4 / 5 seconds. | III | Ender Bow |
-| **Echo Strike** | Every third qualifying same-target Jab, Charge, or Lunge-assisted direct spear contact gains 15% / 25% / 35% damage. | III | — |
-| **End Affinity** | Deals 20% more direct damage to configured End-origin creatures. | I | Ender Bow |
-| **Frostbite** | Has a 5% / 7.5% / 10% chance to apply Slowness I and freezing pressure. | III | — |
+| <span class="enchant-name"><img src="../../assets/enchantments/echo_strike.webp" alt="" class="enchant-icon"> <strong>Echo Strike</strong></span> | Every third qualifying same-target Jab, Charge, or Lunge-assisted direct spear contact gains 15% / 25% / 35% damage. | III | — |
+| <span class="enchant-name"><img src="../../assets/enchantments/end_affinity.webp" alt="" class="enchant-icon"> <strong>End Affinity</strong></span> | Deals 20% more direct damage to configured End-origin creatures. | I | Ender Bow |
+| <span class="enchant-name"><img src="../../assets/enchantments/frostbite.webp" alt="" class="enchant-icon"> <strong>Frostbite</strong></span> | Has a 5% / 7.5% / 10% chance to apply Slowness I and freezing pressure. | III | — |
 | **Lifesteal** | Has a 12% / 16% / 20% chance to heal 0.5 / 0.75 / 1 health from the original direct hit. | III | Ender Bow |
 | **Ninja** | Deals 10% more direct damage while sneaking. | I | Ender Bow |
 | **Penetration** | Ignores 10% / 15% / 20% of the target armour points only. | III | Ender Bow |

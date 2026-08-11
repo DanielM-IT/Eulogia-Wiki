@@ -29,10 +29,10 @@ Every enchantment on this page can be applied to **Axe** equipment, so the compa
 | **Desperate Strike** | Adds 10% / 20% / 30% damage to fully charged critical axe hits while below 50% health. | III | — |
 | **Dexterity** | Increases attack speed by 25% while the exact enchanted weapon is active. | I | — |
 | **Double Strike** | Has a 3% / 5% chance to repeat 100% of the completed original pre-defence hit. | II | — |
-| **End Affinity** | Deals 20% more direct damage to configured End-origin creatures. | I | Ender Bow |
-| **First Strike** | Deals 10% / 20% / 30% more direct damage to a target at exactly full ordinary health. | III | — |
-| **Frostbite** | Has a 5% / 7.5% / 10% chance to apply Slowness I and freezing pressure. | III | — |
-| **Glass Breaker** | Rapidly breaks configured glass blocks without generating bonus drops. | I | — |
+| <span class="enchant-name"><img src="../../assets/enchantments/end_affinity.webp" alt="" class="enchant-icon"> <strong>End Affinity</strong></span> | Deals 20% more direct damage to configured End-origin creatures. | I | Ender Bow |
+| <span class="enchant-name"><img src="../../assets/enchantments/first_strike.webp" alt="" class="enchant-icon"> <strong>First Strike</strong></span> | Deals 10% / 20% / 30% more direct damage to a target at exactly full ordinary health. | III | — |
+| <span class="enchant-name"><img src="../../assets/enchantments/frostbite.webp" alt="" class="enchant-icon"> <strong>Frostbite</strong></span> | Has a 5% / 7.5% / 10% chance to apply Slowness I and freezing pressure. | III | — |
+| <span class="enchant-name"><img src="../../assets/enchantments/glass_breaker.webp" alt="" class="enchant-icon"> <strong>Glass Breaker</strong></span> | Rapidly breaks configured glass blocks without generating bonus drops. | I | — |
 | **Haste** | Grants Haste I / II while the exact enchanted tool is held in the main hand. | II | — |
 | **Ironclad** | Direct melee kills grant one absorption health, capped at 2 / 3 / 4 health. | III | — |
 | **Lifesteal** | Has a 12% / 16% / 20% chance to heal 0.5 / 0.75 / 1 health from the original direct hit. | III | Ender Bow |

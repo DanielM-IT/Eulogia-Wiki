@@ -22,8 +22,8 @@ Every enchantment on this page can be applied to **Trident** equipment, so the c
 | **Curse of Misfortune** | Has a 7% / 14% / 21% chance for an eligible block or creature to produce no item drops or XP. | III | Fortune, Looting, Silk Chest, Silk Spawner |
 | **Decapitator** | Eligible defeated entities have a 1% / 2% / 3% chance to drop their head. | III | Ender Bow |
 | **Decay** | Has a 4% / 7% / 10% chance to apply Wither I for 3 / 4 / 5 seconds. | III | Ender Bow |
-| **End Affinity** | Deals 20% more direct damage to configured End-origin creatures. | I | Ender Bow |
-| **Harpooning** | Adds 0.75 direct damage per level to qualifying melee, thrown and Riptide trident hits. | V | — |
+| <span class="enchant-name"><img src="../../assets/enchantments/end_affinity.webp" alt="" class="enchant-icon"> <strong>End Affinity</strong></span> | Deals 20% more direct damage to configured End-origin creatures. | I | Ender Bow |
+| <span class="enchant-name"><img src="../../assets/enchantments/harpooning.webp" alt="" class="enchant-icon"> <strong>Harpooning</strong></span> | Adds 0.75 direct damage per level to qualifying melee, thrown and Riptide trident hits. | V | — |
 | **Infernus** | A directly struck entity is ignited for 3 / 4 / 5 seconds by a thrown trident. | III | Riptide |
 | **Leviathan** | Deals 5% / 10% / 15% more direct trident damage to configured bosses and elites. | III | — |
 | **Lifesteal** | Has a 12% / 16% / 20% chance to heal 0.5 / 0.75 / 1 health from the original direct hit. | III | Ender Bow |

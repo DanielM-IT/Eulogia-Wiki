@@ -10,7 +10,7 @@ Every enchantment on this page can be applied to **Hoe** equipment, so the compa
 | **Curse of Fragility** | Prevents the item from being used in an anvil or grindstone. | I | — |
 | **Curse of Mediocrity** | Has a 15% / 30% / 45% chance to remove all enchantments from eligible block or creature item drops. | III | — |
 | **Curse of Misfortune** | Has a 7% / 14% / 21% chance for an eligible block or creature to produce no item drops or XP. | III | Fortune, Looting, Silk Chest, Silk Spawner |
-| **Glass Breaker** | Rapidly breaks configured glass blocks without generating bonus drops. | I | — |
+| <span class="enchant-name"><img src="../../assets/enchantments/glass_breaker.webp" alt="" class="enchant-icon"> <strong>Glass Breaker</strong></span> | Rapidly breaks configured glass blocks without generating bonus drops. | I | — |
 | **Haste** | Grants Haste I / II while the exact enchanted tool is held in the main hand. | II | — |
 | **Mass Excavate** | Breaks a 3x3 / 5x5 / 7x7 face parallel to the clicked block face. | III | <details class="conflict-details"><summary><strong>⚠ 10 conflicts</strong><br><em>view list</em></summary><div class="conflict-list">Aftershock, Blast Mining, Canyon Dig, Fissure, Motherlode, Quarry, Terrain, Trench, Tunnel Bore, Vein Miner</div></details> |
 | **Plow** | Converts a one-block-wide line of 3 / 4 / 5 eligible blocks into farmland. | III | — |
