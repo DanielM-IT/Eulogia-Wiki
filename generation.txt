@@ -1,0 +1,40 @@
+PASS: 160 enchantments loaded
+PASS: enchantment IDs are unique
+PASS: enchantment display names are unique
+PASS: Armour: 40 / 40
+PASS: Weapon: 41 / 41
+PASS: Bow: 22 / 22
+PASS: Tools: 29 / 29
+PASS: Tridents: 6 / 6
+PASS: Fishing: 7 / 7
+PASS: Shields: 4 / 4
+PASS: Elytra: 4 / 4
+PASS: Universal: 7 / 7
+PASS: all compatible-item targets are recognised
+PASS: Ender Bow has 42 declared conflicts
+WROTE: /mnt/data/Eulogia-Wiki-Item-Pages-Update/docs/enchantments/items/helmet.md (20 enchantments)
+WROTE: /mnt/data/Eulogia-Wiki-Item-Pages-Update/docs/enchantments/items/chestplate.md (24 enchantments)
+WROTE: /mnt/data/Eulogia-Wiki-Item-Pages-Update/docs/enchantments/items/leggings.md (15 enchantments)
+WROTE: /mnt/data/Eulogia-Wiki-Item-Pages-Update/docs/enchantments/items/boots.md (15 enchantments)
+WROTE: /mnt/data/Eulogia-Wiki-Item-Pages-Update/docs/enchantments/items/elytra.md (19 enchantments)
+WROTE: /mnt/data/Eulogia-Wiki-Item-Pages-Update/docs/enchantments/items/sword.md (39 enchantments)
+WROTE: /mnt/data/Eulogia-Wiki-Item-Pages-Update/docs/enchantments/items/axe.md (49 enchantments)
+WROTE: /mnt/data/Eulogia-Wiki-Item-Pages-Update/docs/enchantments/items/spear.md (32 enchantments)
+WROTE: /mnt/data/Eulogia-Wiki-Item-Pages-Update/docs/enchantments/items/mace.md (7 enchantments)
+WROTE: /mnt/data/Eulogia-Wiki-Item-Pages-Update/docs/enchantments/items/bow.md (47 enchantments)
+WROTE: /mnt/data/Eulogia-Wiki-Item-Pages-Update/docs/enchantments/items/crossbow.md (44 enchantments)
+WROTE: /mnt/data/Eulogia-Wiki-Item-Pages-Update/docs/enchantments/items/trident.md (34 enchantments)
+WROTE: /mnt/data/Eulogia-Wiki-Item-Pages-Update/docs/enchantments/items/pickaxe.md (26 enchantments)
+WROTE: /mnt/data/Eulogia-Wiki-Item-Pages-Update/docs/enchantments/items/shovel.md (17 enchantments)
+WROTE: /mnt/data/Eulogia-Wiki-Item-Pages-Update/docs/enchantments/items/hoe.md (16 enchantments)
+WROTE: /mnt/data/Eulogia-Wiki-Item-Pages-Update/docs/enchantments/items/shears.md (7 enchantments)
+WROTE: /mnt/data/Eulogia-Wiki-Item-Pages-Update/docs/enchantments/items/brush.md (7 enchantments)
+WROTE: /mnt/data/Eulogia-Wiki-Item-Pages-Update/docs/enchantments/items/flint-and-steel.md (7 enchantments)
+WROTE: /mnt/data/Eulogia-Wiki-Item-Pages-Update/docs/enchantments/items/fishing-rod.md (14 enchantments)
+WROTE: /mnt/data/Eulogia-Wiki-Item-Pages-Update/docs/enchantments/items/shield.md (11 enchantments)
+WROTE: /mnt/data/Eulogia-Wiki-Item-Pages-Update/docs/enchantments/index.md
+WROTE: /mnt/data/Eulogia-Wiki-Item-Pages-Update/docs/enchantments/list.md
+WROTE: /mnt/data/Eulogia-Wiki-Item-Pages-Update/docs/enchantments/armour.md
+WROTE: /mnt/data/Eulogia-Wiki-Item-Pages-Update/docs/enchantments/weapons.md
+WROTE: /mnt/data/Eulogia-Wiki-Item-Pages-Update/docs/enchantments/tools.md
+SUCCESS: item-based enchantment documentation generated

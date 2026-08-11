@@ -9,18 +9,19 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA_FILE = ROOT / "data" / "enchantments.csv"
 DOCS_DIR = ROOT / "docs" / "enchantments"
 ITEMS_DIR = ROOT / "docs" / "assets" / "items"
+ENCHANT_ICONS_DIR = ROOT / "docs" / "assets" / "enchantments"
 
 EXPECTED_TOTAL = 160
 CATEGORY_CONFIG = [
-    ("Armor", "Armour", "armour.md", 40),
-    ("Weapon", "Weapons", "weapons.md", 41),
-    ("Bow", "Bows and Crossbows", "bows.md", 22),
-    ("Tool", "Tools", "tools.md", 29),
-    ("Trident", "Tridents", "tridents.md", 6),
-    ("Fishing", "Fishing", "fishing.md", 7),
-    ("Shield", "Shields", "shields.md", 4),
-    ("Elytra", "Elytra", "elytra.md", 4),
-    ("Universal", "Universal", "universal.md", 7),
+    ("Armor", "Armour", 40),
+    ("Weapon", "Weapon", 41),
+    ("Bow", "Bow", 22),
+    ("Tool", "Tools", 29),
+    ("Trident", "Tridents", 6),
+    ("Fishing", "Fishing", 7),
+    ("Shield", "Shields", 4),
+    ("Elytra", "Elytra", 4),
+    ("Universal", "Universal", 7),
 ]
 
 TARGETS = {
@@ -46,14 +47,31 @@ TARGETS = {
     "mace": ("Mace", "mace.webp", "🔨"),
 }
 
+ITEM_PAGE_CONFIG = [
+    ("helmet", "Helmet", "helmet.md"),
+    ("chestplate", "Chestplate", "chestplate.md"),
+    ("leggings", "Leggings", "leggings.md"),
+    ("boots", "Boots", "boots.md"),
+    ("elytra", "Elytra", "elytra.md"),
+    ("sword", "Sword", "sword.md"),
+    ("axe", "Axe", "axe.md"),
+    ("spear", "Spear", "spear.md"),
+    ("mace", "Mace", "mace.md"),
+    ("bow", "Bow", "bow.md"),
+    ("crossbow", "Crossbow", "crossbow.md"),
+    ("trident", "Trident", "trident.md"),
+    ("pickaxe", "Pickaxe", "pickaxe.md"),
+    ("shovel", "Shovel", "shovel.md"),
+    ("hoe", "Hoe", "hoe.md"),
+    ("shears", "Shears", "shears.md"),
+    ("brush", "Brush", "brush.md"),
+    ("flint_and_steel", "Flint and Steel", "flint-and-steel.md"),
+    ("fishing_rod", "Fishing Rod", "fishing-rod.md"),
+    ("shield", "Shield", "shield.md"),
+]
+
 REQUIRED_FIELDS = {
-    "Category",
-    "ID",
-    "Name",
-    "Summary",
-    "Incompatible With",
-    "Max Level",
-    "Targets",
+    "Category", "ID", "Name", "Summary", "Incompatible With", "Max Level", "Targets"
 }
 
 
@@ -73,7 +91,6 @@ def escape_table(value: str) -> str:
 def load_rows() -> list[dict[str, str]]:
     if not DATA_FILE.exists():
         fail(f"Missing data file: {DATA_FILE}")
-
     with DATA_FILE.open("r", encoding="utf-8-sig", newline="") as handle:
         reader = csv.DictReader(handle)
         if not reader.fieldnames:
@@ -81,14 +98,22 @@ def load_rows() -> list[dict[str, str]]:
         missing = REQUIRED_FIELDS - set(reader.fieldnames)
         if missing:
             fail(f"CSV is missing required columns: {', '.join(sorted(missing))}")
-        rows = [{k: clean(v) for k, v in row.items()} for row in reader]
+        return [{k: clean(v) for k, v in row.items()} for row in reader]
 
-    return rows
+
+def targets_for(row: dict[str, str]) -> list[str]:
+    return [part.strip() for part in row["Targets"].split(",") if part.strip()]
+
+
+def conflicts_for(row: dict[str, str]) -> list[str]:
+    value = clean(row["Incompatible With"])
+    if not value or value == "—":
+        return []
+    return [part.strip() for part in value.split(",") if part.strip()]
 
 
 def validate(rows: list[dict[str, str]]) -> None:
     errors: list[str] = []
-
     if len(rows) != EXPECTED_TOTAL:
         errors.append(f"expected {EXPECTED_TOTAL} rows, found {len(rows)}")
 
@@ -102,29 +127,26 @@ def validate(rows: list[dict[str, str]]) -> None:
     expected_categories = {source for source, *_ in CATEGORY_CONFIG}
     actual_categories = {row["Category"] for row in rows}
     if actual_categories != expected_categories:
-        errors.append(
-            "category set mismatch: "
-            f"expected {sorted(expected_categories)}, found {sorted(actual_categories)}"
-        )
+        errors.append(f"category set mismatch: expected {sorted(expected_categories)}, found {sorted(actual_categories)}")
 
     counts = Counter(row["Category"] for row in rows)
-    for source, _label, _file, expected_count in CATEGORY_CONFIG:
+    for source, _label, expected_count in CATEGORY_CONFIG:
         if counts[source] != expected_count:
-            errors.append(
-                f"{source}: expected {expected_count} enchants, found {counts[source]}"
-            )
+            errors.append(f"{source}: expected {expected_count} enchants, found {counts[source]}")
 
     for row_number, row in enumerate(rows, start=2):
         for field in REQUIRED_FIELDS:
             if not row[field]:
                 errors.append(f"row {row_number}: blank required field {field}")
-
-        raw_targets = [part.strip() for part in row["Targets"].split(",") if part.strip()]
-        unknown = [target for target in raw_targets if target not in TARGETS]
+        unknown = [target for target in targets_for(row) if target not in TARGETS]
         if unknown:
-            errors.append(
-                f"row {row_number} ({row['ID']}): unknown targets {', '.join(unknown)}"
-            )
+            errors.append(f"row {row_number} ({row['ID']}): unknown targets {', '.join(unknown)}")
+
+    ender = next((row for row in rows if row["ID"] == "ender_bow"), None)
+    if not ender:
+        errors.append("Ender Bow entry not found")
+    elif len(conflicts_for(ender)) != 42:
+        errors.append(f"Ender Bow: expected 42 conflicts, found {len(conflicts_for(ender))}")
 
     if errors:
         print("Validation failed:", file=sys.stderr)
@@ -135,125 +157,228 @@ def validate(rows: list[dict[str, str]]) -> None:
     print(f"PASS: {len(rows)} enchantments loaded")
     print("PASS: enchantment IDs are unique")
     print("PASS: enchantment display names are unique")
-    for source, label, _file, expected_count in CATEGORY_CONFIG:
-        print(f"PASS: {label}: {expected_count}")
+    for source, label, expected_count in CATEGORY_CONFIG:
+        print(f"PASS: {label}: {counts[source]} / {expected_count}")
     print("PASS: all compatible-item targets are recognised")
+    print("PASS: Ender Bow has 42 declared conflicts")
 
 
-def render_targets(raw_targets: str) -> str:
+def render_name(row: dict[str, str], asset_prefix: str) -> str:
+    name = escape_table(row["Name"])
+    icon_path = ENCHANT_ICONS_DIR / f"{row['ID']}.webp"
+    if icon_path.exists():
+        return (
+            f'<span class="enchant-name"><img src="{asset_prefix}/enchantments/{row["ID"]}.webp" '
+            f'alt="" class="enchant-icon"> <strong>{name}</strong></span>'
+        )
+    return f"**{name}**"
+
+
+def render_targets(raw_targets: str, asset_prefix: str) -> str:
     rendered: list[str] = []
     for target in [part.strip() for part in raw_targets.split(",") if part.strip()]:
         label, filename, fallback = TARGETS[target]
         image_path = ITEMS_DIR / filename
         if image_path.exists():
             rendered.append(
-                f'<img src="../assets/items/{filename}" '
-                f'alt="{label}" title="{label}" class="item-icon">'
+                f'<img src="{asset_prefix}/items/{filename}" alt="{label}" title="{label}" class="item-icon">'
             )
         else:
             rendered.append(f'<span title="{label}">{fallback}</span>')
     return " ".join(rendered) or "—"
 
 
-def table_for(rows: list[dict[str, str]]) -> str:
+def render_conflicts(row: dict[str, str]) -> str:
+    conflicts = conflicts_for(row)
+    if not conflicts:
+        return "—"
+    names = escape_table(", ".join(conflicts))
+    count = len(conflicts)
+
+    if row["ID"] == "ender_bow":
+        return (
+            '<details class="conflict-details exclusive-conflict">'
+            '<summary><strong>🔒 Exclusive Bow Enchantment</strong><br>'
+            f'<em>{count} conflicts — view list</em></summary>'
+            f'<div class="conflict-list">{names}</div></details>'
+        )
+
+    if count >= 5:
+        return (
+            '<details class="conflict-details">'
+            f'<summary><strong>⚠ {count} conflicts</strong><br><em>view list</em></summary>'
+            f'<div class="conflict-list">{names}</div></details>'
+        )
+
+    return names
+
+
+def complete_table(rows: list[dict[str, str]]) -> str:
     lines = [
         "| Name | Summary | Max Level | Compatible Items | Incompatible With |",
         "|---|---|:---:|---|---|",
     ]
-
     for row in sorted(rows, key=lambda item: item["Name"].casefold()):
         lines.append(
-            "| "
-            + " | ".join(
-                [
-                    f"**{escape_table(row['Name'])}**",
-                    escape_table(row["Summary"]),
-                    escape_table(row["Max Level"]),
-                    render_targets(row["Targets"]),
-                    escape_table(row["Incompatible With"] or "—"),
-                ]
-            )
-            + " |"
+            "| " + " | ".join([
+                render_name(row, "../assets"),
+                escape_table(row["Summary"]),
+                escape_table(row["Max Level"]),
+                render_targets(row["Targets"], "../assets"),
+                render_conflicts(row),
+            ]) + " |"
         )
-
     return "\n".join(lines)
 
 
-def category_page(label: str, rows: list[dict[str, str]]) -> str:
-    return f"""# {label} Enchantments
-
-**{len(rows)} custom enchantments**
-
-The table below lists every Eulogia enchantment in this category, including its effect, maximum level, compatible equipment, and conflicts.
-
-{table_for(rows)}
-
----
-
-*Generated from `data/enchantments.csv`. Do not edit this table by hand.*
-"""
+def item_table(rows: list[dict[str, str]]) -> str:
+    lines = [
+        "| Name | Summary | Max Level | Incompatible With |",
+        "|---|---|:---:|---|",
+    ]
+    for row in sorted(rows, key=lambda item: item["Name"].casefold()):
+        lines.append(
+            "| " + " | ".join([
+                render_name(row, "../../assets"),
+                escape_table(row["Summary"]),
+                escape_table(row["Max Level"]),
+                render_conflicts(row),
+            ]) + " |"
+        )
+    return "\n".join(lines)
 
 
 def complete_page(rows: list[dict[str, str]]) -> str:
-    sections = [
-        "# Complete Enchantment List",
-        "",
-        f"This catalogue contains **{len(rows)} validated Eulogia custom enchantments**.",
-        "",
-        "Compatible equipment is shown with item icons. Hover an icon to see its item name.",
-        "",
+    # Internal Bow entries are intentionally merged into Weapons on the complete catalogue.
+    sections_config = [
+        ("Armour", {"Armor"}),
+        ("Weapons", {"Weapon", "Bow"}),
+        ("Tools", {"Tool"}),
+        ("Tridents", {"Trident"}),
+        ("Fishing", {"Fishing"}),
+        ("Shields", {"Shield"}),
+        ("Elytra", {"Elytra"}),
+        ("Universal", {"Universal"}),
     ]
-
-    grouped = {category: [] for category, *_ in CATEGORY_CONFIG}
-    for row in rows:
-        grouped[row["Category"]].append(row)
-
-    for source, label, _file, _expected in CATEGORY_CONFIG:
-        sections.extend(
-            [
-                f"## {label}",
-                "",
-                table_for(grouped[source]),
-                "",
-            ]
-        )
-
-    sections.extend(
-        [
-            "---",
-            "",
-            "*Generated from `data/enchantments.csv`. Do not edit this catalogue by hand.*",
-            "",
-        ]
-    )
+    sections = [
+        "# Complete Enchantment List", "",
+        f"This catalogue contains **{len(rows)} validated Eulogia custom enchantments**.", "",
+        "Compatible equipment is shown with item icons. Hover an icon to see its item name.", "",
+        "Bow-category enchantments are included under **Weapons** here to avoid splitting one weapon family across two catalogue sections.", "",
+    ]
+    total_rendered = 0
+    for label, categories in sections_config:
+        subset = [row for row in rows if row["Category"] in categories]
+        total_rendered += len(subset)
+        sections.extend([f"## {label} ({len(subset)})", "", complete_table(subset), ""])
+    if total_rendered != EXPECTED_TOTAL:
+        fail(f"complete catalogue grouping rendered {total_rendered}, expected {EXPECTED_TOTAL}")
+    sections.extend(["---", "", "*Generated from `data/enchantments.csv`. Do not edit this catalogue by hand.*", ""])
     return "\n".join(sections)
+
+
+def item_page(target: str, label: str, rows: list[dict[str, str]]) -> str:
+    subset = [row for row in rows if target in targets_for(row)]
+    return f"""# {label} Enchantments
+
+**{len(subset)} enchantments are compatible with {label}.**
+
+Every enchantment on this page can be applied to **{label}** equipment, so the compatibility column is intentionally omitted.
+
+{item_table(subset)}
+
+---
+
+*Generated from `data/enchantments.csv` by target compatibility. Do not edit this table by hand.*
+"""
+
+
+def overview_page(title: str, intro: str, targets: list[tuple[str, str, str]], rows: list[dict[str, str]]) -> str:
+    lines = [f"# {title}", "", intro, "", '<div class="grid cards" markdown>', ""]
+    for target, label, filename in targets:
+        count = sum(1 for row in rows if target in targets_for(row))
+        lines.extend([
+            f"-   **{label}**", "", f"    **{count} compatible enchantments**", "",
+            f"    [:octicons-arrow-right-24: View {label} enchantments](items/{filename})", "",
+        ])
+    lines.extend(["</div>", "", "Counts include item-specific, shared, global, universal, and applicable curse enchantments.", ""])
+    return "\n".join(lines)
+
+
+def enchant_index(rows: list[dict[str, str]]) -> str:
+    return f"""# Custom Enchantments
+
+Eulogia contains **{len(rows)} validated custom enchantments**.
+
+## Browse the catalogue
+
+The [Complete Enchantment List](list.md) shows all 160 enchantments and their compatible equipment.
+
+## Browse by item
+
+For equipment building, use the item-specific pages. Each page contains only enchantments that can actually be applied to that item, so those tables do not repeat a compatibility column.
+
+- [Armour equipment](armour.md)
+- [Weapons](weapons.md)
+- [Tools](tools.md)
+- [Fishing Rod](items/fishing-rod.md)
+- [Shield](items/shield.md)
+
+!!! info "Custom-enchantment limit"
+    An eligible item may contain no more than five Eulogia custom enchantments. Vanilla enchantments do not consume those five custom-enchantment slots.
+"""
 
 
 def write_docs(rows: list[dict[str, str]]) -> None:
     DOCS_DIR.mkdir(parents=True, exist_ok=True)
+    item_dir = DOCS_DIR / "items"
+    item_dir.mkdir(parents=True, exist_ok=True)
 
-    grouped = {category: [] for category, *_ in CATEGORY_CONFIG}
-    for row in rows:
-        grouped[row["Category"]].append(row)
+    (DOCS_DIR / "index.md").write_text(enchant_index(rows), encoding="utf-8", newline="\n")
+    (DOCS_DIR / "list.md").write_text(complete_page(rows), encoding="utf-8", newline="\n")
 
-    (DOCS_DIR / "list.md").write_text(
-        complete_page(rows), encoding="utf-8", newline="\n"
+    armour_targets = [x for x in ITEM_PAGE_CONFIG if x[0] in {"helmet", "chestplate", "leggings", "boots", "elytra"}]
+    weapon_targets = [x for x in ITEM_PAGE_CONFIG if x[0] in {"sword", "axe", "spear", "mace", "bow", "crossbow", "trident"}]
+    tool_targets = [x for x in ITEM_PAGE_CONFIG if x[0] in {"pickaxe", "axe", "shovel", "hoe", "shears", "brush", "flint_and_steel"}]
+
+    (DOCS_DIR / "armour.md").write_text(
+        overview_page("Armour Enchantments", "Choose an armour item to see every enchantment compatible with it.", armour_targets, rows),
+        encoding="utf-8", newline="\n"
     )
-    print(f"WROTE: {DOCS_DIR / 'list.md'}")
+    (DOCS_DIR / "weapons.md").write_text(
+        overview_page("Weapon Enchantments", "Choose a weapon to see every enchantment compatible with it.", weapon_targets, rows),
+        encoding="utf-8", newline="\n"
+    )
+    (DOCS_DIR / "tools.md").write_text(
+        overview_page("Tool Enchantments", "Choose a tool to see every enchantment compatible with it.", tool_targets, rows),
+        encoding="utf-8", newline="\n"
+    )
 
-    for source, label, filename, _expected in CATEGORY_CONFIG:
-        destination = DOCS_DIR / filename
-        destination.write_text(
-            category_page(label, grouped[source]), encoding="utf-8", newline="\n"
-        )
-        print(f"WROTE: {destination}")
+    for target, label, filename in ITEM_PAGE_CONFIG:
+        destination = item_dir / filename
+        destination.write_text(item_page(target, label, rows), encoding="utf-8", newline="\n")
+        count = sum(1 for row in rows if target in targets_for(row))
+        print(f"WROTE: {destination} ({count} enchantments)")
+
+    # Remove superseded generated category pages so they cannot become stale orphan docs.
+    for legacy in ["bows.md", "tridents.md", "fishing.md", "shields.md", "elytra.md", "universal.md"]:
+        path = DOCS_DIR / legacy
+        if path.exists():
+            path.unlink()
+            print(f"REMOVED legacy generated page: {path}")
+
+    print(f"WROTE: {DOCS_DIR / 'index.md'}")
+    print(f"WROTE: {DOCS_DIR / 'list.md'}")
+    print(f"WROTE: {DOCS_DIR / 'armour.md'}")
+    print(f"WROTE: {DOCS_DIR / 'weapons.md'}")
+    print(f"WROTE: {DOCS_DIR / 'tools.md'}")
 
 
 def main() -> None:
     rows = load_rows()
     validate(rows)
     write_docs(rows)
-    print("SUCCESS: enchantment documentation generated")
+    print("SUCCESS: item-based enchantment documentation generated")
 
 
 if __name__ == "__main__":

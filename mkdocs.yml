@@ -50,13 +50,10 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - tables
-
   - pymdownx.details
   - pymdownx.superfences
-
   - pymdownx.tabbed:
       alternate_style: true
-
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -70,15 +67,37 @@ nav:
   - Enchantments:
       - Overview: enchantments/index.md
       - Complete Enchantment List: enchantments/list.md
-      - Armour: enchantments/armour.md
-      - Weapons: enchantments/weapons.md
-      - Bows and Crossbows: enchantments/bows.md
-      - Tools: enchantments/tools.md
-      - Tridents: enchantments/tridents.md
-      - Fishing: enchantments/fishing.md
-      - Shields: enchantments/shields.md
-      - Elytra: enchantments/elytra.md
-      - Universal: enchantments/universal.md
+
+      - Armour:
+          - Overview: enchantments/armour.md
+          - Helmet: enchantments/items/helmet.md
+          - Chestplate: enchantments/items/chestplate.md
+          - Leggings: enchantments/items/leggings.md
+          - Boots: enchantments/items/boots.md
+          - Elytra: enchantments/items/elytra.md
+
+      - Weapons:
+          - Overview: enchantments/weapons.md
+          - Sword: enchantments/items/sword.md
+          - Axe: enchantments/items/axe.md
+          - Spear: enchantments/items/spear.md
+          - Mace: enchantments/items/mace.md
+          - Bow: enchantments/items/bow.md
+          - Crossbow: enchantments/items/crossbow.md
+          - Trident: enchantments/items/trident.md
+
+      - Tools:
+          - Overview: enchantments/tools.md
+          - Pickaxe: enchantments/items/pickaxe.md
+          - Axe: enchantments/items/axe.md
+          - Shovel: enchantments/items/shovel.md
+          - Hoe: enchantments/items/hoe.md
+          - Shears: enchantments/items/shears.md
+          - Brush: enchantments/items/brush.md
+          - Flint and Steel: enchantments/items/flint-and-steel.md
+
+      - Fishing Rod: enchantments/items/fishing-rod.md
+      - Shield: enchantments/items/shield.md
 
   - Mechanics:
       - Overview: mechanics/index.md
