@@ -1,0 +1,161 @@
+﻿Category,ID,Name,Summary,Incompatible With,Max Level,Compatible Items,Targets,Source Path
+Armor,adrenaline,Adrenaline,Crossing below 25% ordinary health from combat damage grants 30% movement speed for seven seconds.,—,I,👖,leggings,armor/leggings/adrenaline.yml
+Armor,aspect_of_the_enderman,Aspect of the Enderman,Increases block-interaction reach by 1 / 2 / 3 blocks while preserving line of sight and protection checks.,—,III,🥋 🪽,"chestplate, elytra",armor/chest_or_elytra/aspect_of_the_enderman.yml
+Armor,berserker_plate,Berserker Plate,Direct damage scales continuously with missing health up to 10% / 20% / 30%.,—,III,🥋,chestplate,armor/chestplate/berserker_plate.yml
+Armor,block_breather,Block Breather,Has a 25% / 50% / 75% chance to ignore a suffocation-damage event.,—,III,🪖,helmet,armor/helmet/block_breather.yml
+Armor,cognition,Cognition,Reduces the displayed vanilla anvil XP cost by 10% / 20% / 30%.,—,III,🪖,helmet,armor/helmet/cognition.yml
+Armor,counterstrike,Counterstrike,Qualifying combat damage stores one direct-attack bonus of 10% / 15% / 20%.,—,III,🥋,chestplate,armor/chestplate/counterstrike.yml
+Armor,curse_of_hunger,Curse of Hunger,Increases ordinary exhaustion accumulation by 50%.,—,I,🪖,helmet,armor/helmet/curse_of_hunger.yml
+Armor,darkness_cloak,Darkness Cloak,Eligible melee contact has a 5% / 7.5% / 10% chance to apply Darkness.,—,III,🥋 🪽,"chestplate, elytra",armor/chest_or_elytra/darkness_cloak.yml
+Armor,deflect,Deflect,Has a 3% / 5% / 7% chance to completely negate a qualifying original incoming attack.,—,III,🥋,chestplate,armor/chestplate/deflect.yml
+Armor,dragonhide,Dragonhide,Has a 10% / 15% / 20% chance to reduce a qualifying hit by 15% / 20% / 25%.,—,III,🥋,chestplate,armor/chestplate/dragonhide.yml
+Armor,elemental_protection,Elemental Protection,Reduces qualifying magical and elemental damage by 10% / 15% / 20%.,—,III,🥾,boots,armor/boots/elemental_protection.yml
+Armor,feather_step,Feather Step,"Prevents trampling farmland, turtle eggs and similar fragile blocks.",—,I,🥾,boots,armor/boots/feather_step.yml
+Armor,fire_shield,Fire Shield,Eligible melee contact has a 5% / 7.5% / 10% chance to ignite the attacker for 2 / 3 / 4 seconds.,—,III,🥋 🪽,"chestplate, elytra",armor/chest_or_elytra/fire_shield.yml
+Armor,focal,Focal,Deals 4% / 6% / 8% more direct damage when exactly one visible qualifying enemy is nearby and is the target.,—,III,🪖,helmet,armor/helmet/focal.yml
+Armor,fortitude,Fortitude,Increases qualifying original direct-attack damage by 2% / 4% / 6%.,—,III,👖,leggings,armor/leggings/fortitude.yml
+Armor,frost_ward,Frost Ward,Eligible melee contact has a 5% / 7.5% / 10% chance to slow and freeze the attacker.,—,III,🥋 🪽,"chestplate, elytra",armor/chest_or_elytra/frost_ward.yml
+Armor,grounded_heal,Grounded Heal,"While sneaking outside combat, restores one health every 4 / 3 / 2 seconds.",—,III,🥾,boots,armor/boots/grounded_heal.yml
+Armor,hard_worker,Hard Worker,Increases EcoJobs job XP by 5% / 10% / 15%.,—,III,🪖,helmet,armor/helmet/hard_worker.yml
+Armor,hardened,Hardened,Qualifying combat damage has a 10% / 15% / 20% chance to grant Resistance I for 3 / 4 / 5 seconds.,—,III,🥋 🪽,"chestplate, elytra",armor/chest_or_elytra/hardened.yml
+Armor,insulate,Insulate,"Reduces fire, burning and lava damage by 10% / 20% / 30%.",—,III,🥋,chestplate,armor/chestplate/insulate.yml
+Armor,iron_will,Iron Will,Reduces eligible incoming damage by 10% / 15% / 20% while below 25% maximum health.,—,III,👖,leggings,armor/leggings/iron_will.yml
+Armor,lava_walker,Lava Walker,Temporarily converts eligible surface lava into magma in a 2 / 3 / 4 block radius.,—,III,🥾,boots,armor/boots/lava_walker.yml
+Armor,leaping,Leaping,"Grants Jump Boost I, primarily allowing fences and similar 1.5-block obstacles to be cleared.",—,I,🥾,boots,armor/boots/leaping.yml
+Armor,leech,Leech,"Valid direct melee kills heal one health, with a one-second cooldown.",—,I,👖,leggings,armor/leggings/leech.yml
+Armor,mindforge,Mindforge,Increases ordinary Minecraft XP by 5% / 10% / 15%.,—,III,🪖,helmet,armor/helmet/mindforge.yml
+Armor,mindshield,Mindshield,Reduces Poison and Wither tick damage by 20% / 35% / 50%.,—,III,🪖,helmet,armor/helmet/mindshield.yml
+Armor,night_vision,Night Vision,Grants Night Vision while the helmet is equipped.,—,I,🪖,helmet,armor/helmet/night_vision.yml
+Armor,nourishment,Nourishment,Increases hunger and saturation restored by food by 10% / 20% / 30%.,—,III,🥋,chestplate,armor/chestplate/nourishment.yml
+Armor,padded,Padded,Reduces qualifying direct projectile damage by 10% / 15% / 20%.,—,III,🪖,helmet,armor/helmet/padded.yml
+Armor,regrowth,Regrowth,"Outside combat, restores one health every 6 / 4 / 3 seconds.",—,III,🥋 🪽,"chestplate, elytra",armor/chest_or_elytra/regrowth.yml
+Armor,reinforced,Reinforced,Adds one armour toughness while equipped in the correct slot.,—,I,🪖 🥋 👖 🥾 🪽,"helmet, chestplate, leggings, boots, elytra",armor/shared/reinforced.yml
+Armor,saturation,Saturation,Periodically restores hidden saturation while the wearer is already well fed.,—,I,🪖,helmet,armor/helmet/saturation.yml
+Armor,stamina,Stamina,Reduces sprinting exhaustion by 10% / 20% / 30%.,—,III,🥋,chestplate,armor/chestplate/stamina.yml
+Armor,steadfast,Steadfast,Reduces explosion damage by 10% / 20% / 30% and explosion knockback by 25% / 50% / 75%.,—,III,🥋,chestplate,armor/chestplate/steadfast.yml
+Armor,steady,Steady,Grants 5% / 10% / 15% ordinary knockback resistance.,—,III,👖,leggings,armor/leggings/steady.yml
+Armor,sustenance,Sustenance,"Outside combat, restores one visible hunger point every 30 seconds while walking.",—,I,👖,leggings,armor/leggings/sustenance.yml
+Armor,swiftness,Swiftness,Increases movement speed by 5% / 10% / 15%.,—,III,🥾,boots,armor/boots/swiftness.yml
+Armor,venom_plating,Venom Plating,Eligible melee contact has a 5% / 7.5% / 10% chance to apply Poison I for 3 / 4 / 5 seconds.,—,III,🥋,chestplate,armor/chestplate/venom_plating.yml
+Armor,vitality,Vitality,Adds two hearts of maximum health while equipped in the correct slot.,—,I,🪖 🥋 👖 🥾 🪽,"helmet, chestplate, leggings, boots, elytra",armor/shared/vitality.yml
+Armor,water_breathing,Water Breathing,Grants Water Breathing while the helmet is equipped.,—,I,🪖,helmet,armor/helmet/water_breathing.yml
+Weapon,abrasion,Abrasion,Damages one random eligible armour piece by 1 / 2 additional durability.,—,II,⚔️ 🪓,"sword, axe",mainhand/melee/abrasion.yml
+Weapon,backswing,Backswing,A qualifying missed swing stores 10% / 15% / 20% bonus damage for the next axe hit within two seconds.,—,III,🪓,axe,mainhand/axe/backswing.yml
+Weapon,bane_of_netherspawn,Bane of Netherspawn,Deals 20% more direct damage to configured Nether-origin creatures.,Ender Bow,I,⚔️ 🪓 🏹 🎯 🗡️ 🔱,"sword, axe, bow, crossbow, spear, trident",mainhand/shared/bane_of_netherspawn.yml
+Weapon,bleed,Bleed,Has a 5% / 7.5% / 10% chance to inflict repeated physical bleeding.,Ender Bow,III,⚔️ 🪓 🏹 🎯 🗡️ 🔱,"sword, axe, bow, crossbow, spear, trident",mainhand/shared/bleed.yml
+Weapon,blindness,Blindness,Has a 5% / 7.5% / 10% chance to blind players or disrupt creature targeting.,"Darkness Arrows, Ender Bow",III,⚔️ 🪓 🏹 🎯 🗡️ 🔱,"sword, axe, bow, crossbow, spear, trident",mainhand/shared/blindness.yml
+Weapon,brightness,Brightness,Deals 20% more direct damage to the Warden while fighting in the Deep Dark.,Ender Bow,I,⚔️ 🪓 🏹 🎯 🗡️ 🔱,"sword, axe, bow, crossbow, spear, trident",mainhand/shared/brightness.yml
+Weapon,carve,Carve,Deals 25% / 35% / 45% secondary area damage to up to 2 / 3 / 4 nearby targets.,Cleave,III,🪓,axe,mainhand/axe/carve.yml
+Weapon,cleave,Cleave,Deals 40% / 55% / 70% secondary damage to up to 2 / 3 / 4 targets in a frontal arc.,Carve,III,🪓,axe,mainhand/axe/cleave.yml
+Weapon,counterweight,Counterweight,Increases ordinary dealt knockback by 20% / 40% / 60% and resistance by 10% / 20% / 30%.,—,III,🪓,axe,mainhand/axe/counterweight.yml
+Weapon,criticals,Criticals,Adds 10% / 20% / 30% damage to qualifying vanilla critical hits.,—,III,⚔️ 🪓,"sword, axe",mainhand/melee/criticals.yml
+Weapon,cubism,Cubism,"Deals 20% more direct damage to Slimes, Magma Cubes and configured cube mobs.",Ender Bow,I,⚔️ 🪓 🏹 🎯 🗡️ 🔱,"sword, axe, bow, crossbow, spear, trident",mainhand/shared/cubism.yml
+Weapon,cull,Cull,Deals 15% more direct damage while the target is below 25% maximum health.,Ender Bow,I,⚔️ 🪓 🏹 🎯 🗡️ 🔱,"sword, axe, bow, crossbow, spear, trident",mainhand/shared/cull.yml
+Weapon,cure,Cure,An otherwise lethal hit has a 20% / 30% / 40% chance to convert an eligible target instead.,Ender Bow,III,⚔️ 🪓 🏹 🎯 🗡️ 🔱,"sword, axe, bow, crossbow, spear, trident",mainhand/shared/cure.yml
+Weapon,curse_of_death,Curse of Death,Killing another player has a 1% chance to also kill the wielder.,Ender Bow,I,⚔️ 🪓 🏹 🎯 🗡️ 🔱,"sword, axe, bow, crossbow, spear, trident",mainhand/shared/curse_of_death.yml
+Weapon,decapitator,Decapitator,Eligible defeated entities have a 1% / 2% / 3% chance to drop their head.,Ender Bow,III,⚔️ 🪓 🏹 🎯 🗡️ 🔱,"sword, axe, bow, crossbow, spear, trident",mainhand/shared/decapitator.yml
+Weapon,decay,Decay,Has a 4% / 7% / 10% chance to apply Wither I for 3 / 4 / 5 seconds.,Ender Bow,III,⚔️ 🪓 🏹 🎯 🗡️ 🔱,"sword, axe, bow, crossbow, spear, trident",mainhand/shared/decay.yml
+Weapon,desperate_strike,Desperate Strike,Adds 10% / 20% / 30% damage to fully charged critical axe hits while below 50% health.,—,III,🪓,axe,mainhand/axe/desperate_strike.yml
+Weapon,dexterity,Dexterity,Increases attack speed by 25% while the exact enchanted weapon is active.,—,I,⚔️ 🪓,"sword, axe",mainhand/melee/dexterity.yml
+Weapon,double_strike,Double Strike,Has a 3% / 5% chance to repeat 100% of the completed original pre-defence hit.,—,II,⚔️ 🪓,"sword, axe",mainhand/melee/double_strike.yml
+Weapon,echo,Echo,Has a 5% / 10% chance to deal 50% of the completed original hit after one second.,—,II,⚔️,sword,mainhand/sword/echo.yml
+Weapon,echo_strike,Echo Strike,"Every third qualifying same-target Jab, Charge, or Lunge-assisted direct spear contact gains 15% / 25% / 35% damage.",—,III,🗡️,spear,mainhand/spear/echo_strike.yml
+Weapon,end_affinity,End Affinity,Deals 20% more direct damage to configured End-origin creatures.,Ender Bow,I,⚔️ 🪓 🏹 🎯 🗡️ 🔱,"sword, axe, bow, crossbow, spear, trident",mainhand/shared/end_affinity.yml
+Weapon,first_strike,First Strike,Deals 10% / 20% / 30% more direct damage to a target at exactly full ordinary health.,—,III,⚔️ 🪓,"sword, axe",mainhand/melee/first_strike.yml
+Weapon,frostbite,Frostbite,Has a 5% / 7.5% / 10% chance to apply Slowness I and freezing pressure.,—,III,⚔️ 🪓 🗡️,"sword, axe, spear",mainhand/melee/frostbite.yml
+Weapon,introversion,Introversion,Deals 5% / 10% / 15% more direct damage to genuine enemy players.,—,III,⚔️,sword,mainhand/sword/introversion.yml
+Weapon,ironclad,Ironclad,"Direct melee kills grant one absorption health, capped at 2 / 3 / 4 health.",—,III,🪓,axe,mainhand/axe/ironclad.yml
+Weapon,kinesis,Kinesis,Deals up to 10% / 15% / 20% more direct damage from genuine self-propelled movement.,—,III,⚔️,sword,mainhand/sword/kinesis.yml
+Weapon,lifesteal,Lifesteal,Has a 12% / 16% / 20% chance to heal 0.5 / 0.75 / 1 health from the original direct hit.,Ender Bow,III,⚔️ 🪓 🏹 🎯 🗡️ 🔱,"sword, axe, bow, crossbow, spear, trident",mainhand/shared/lifesteal.yml
+Weapon,ninja,Ninja,Deals 10% more direct damage while sneaking.,Ender Bow,I,⚔️ 🪓 🏹 🎯 🗡️ 🔱,"sword, axe, bow, crossbow, spear, trident",mainhand/shared/ninja.yml
+Weapon,pact_of_the_berserker,Pact of the Berserker,Adds 20% direct axe damage but temporarily reduces effective armour and increases final hostile damage taken.,—,I,🪓,axe,mainhand/axe/pact_of_the_berserker.yml
+Weapon,rage,Rage,Original melee hits have a 5% chance to grant Strength I for 4 seconds or Strength II for 5 seconds.,—,II,⚔️ 🪓 🗡️,"sword, axe, spear",mainhand/melee/rage.yml
+Weapon,shockwave,Shockwave,Creates a non-damaging radial knockback wave with 3 / 4 block radius.,—,II,⚔️ 🪓,"sword, axe",mainhand/melee/shockwave.yml
+Weapon,stun,Stun,Has a 5% / 7.5% / 10% chance to briefly stun the primary target.,Ender Bow,III,⚔️ 🪓 🏹 🎯 🗡️ 🔱,"sword, axe, bow, crossbow, spear, trident",mainhand/shared/stun.yml
+Weapon,temper,Temper,Adds uncapped direct damage for each completed half-health point the wielder is missing.,Ender Bow,V,⚔️ 🪓 🏹 🎯 🗡️ 🔱,"sword, axe, bow, crossbow, spear, trident",mainhand/shared/temper.yml
+Weapon,thrifty,Thrifty,Eligible creatures have a 1% / 2% / 3% chance to drop their spawn egg.,Ender Bow,III,⚔️ 🪓 🏹 🎯 🗡️ 🔱,"sword, axe, bow, crossbow, spear, trident",mainhand/shared/thrifty.yml
+Weapon,thunder,Thunder,Has a 3% / 5% / 7% chance to call controlled lightning dealing 3 / 4 / 5 health.,Ender Bow,III,⚔️ 🪓 🏹 🎯 🗡️ 🔱,"sword, axe, bow, crossbow, spear, trident",mainhand/shared/thunder.yml
+Weapon,venom,Venom,Has a 5% / 7.5% / 10% chance to apply Poison I for 3 / 4 / 5 seconds.,"Contagion, Ender Bow",III,⚔️ 🪓 🏹 🎯 🗡️ 🔱,"sword, axe, bow, crossbow, spear, trident",mainhand/shared/venom.yml
+Weapon,venom_cleave,Venom Cleave,Copies a successful Venom application from the primary target to eligible Carve or Cleave targets.,—,I,🪓,axe,mainhand/axe/venom_cleave.yml
+Weapon,village_defender,Village Defender,Deals 20% more direct damage to configured pillagers and raid creatures.,Ender Bow,I,⚔️ 🪓 🏹 🎯 🗡️ 🔱,"sword, axe, bow, crossbow, spear, trident",mainhand/shared/village_defender.yml
+Weapon,weakening,Weakening,Has a 5% / 10% chance to apply Weakness I for 3 / 4 seconds.,Ender Bow,II,⚔️ 🪓 🏹 🎯 🗡️ 🔱,"sword, axe, bow, crossbow, spear, trident",mainhand/shared/weakening.yml
+Weapon,wisdom,Wisdom,Increases eligible combat XP by 10% / 20% / 30%.,Ender Bow,III,⚔️ 🪓 🏹 🎯 🗡️ 🔱,"sword, axe, bow, crossbow, spear, trident",mainhand/shared/wisdom.yml
+Bow,barrage,Barrage,Fires two synthetic child projectiles at 40% damage each with approximately seven degrees of spread.,"Ender Bow, Ghast",I,🏹 🎯,"bow, crossbow",mainhand/ranged/barrage.yml
+Bow,boss_hunter,Boss Hunter,Deals 5% / 10% / 15% more direct projectile damage to configured bosses and elites.,Ender Bow,III,🏹 🎯,"bow, crossbow",mainhand/ranged/boss_hunter.yml
+Bow,conservation,Conservation,Has a 15% / 25% / 35% chance to preserve one eligible ammunition item.,"Ender Bow, Infinity",III,🏹 🎯,"bow, crossbow",mainhand/ranged/conservation.yml
+Bow,crucible,Crucible,A qualifying primary bolt ignites the target for 3 / 4 / 5 seconds.,"Ghast, Dragonfire Arrows",III,🎯,crossbow,mainhand/crossbow/crucible.yml
+Bow,darkness_arrows,Darkness Arrows,Has a 10% / 15% / 20% chance to apply Darkness for 2 / 3 / 4 seconds.,"Blindness, Ender Bow",III,🏹 🎯,"bow, crossbow",mainhand/ranged/darkness_arrows.yml
+Bow,dragonfire_arrows,Dragonfire Arrows,Has a 4% / 7% / 10% chance to create a temporary damaging Dragonfire area at impact.,"Crucible, Ender Bow, Ghast",III,🏹 🎯,"bow, crossbow",mainhand/ranged/dragonfire_arrows.yml
+Bow,ender_bow,Ender Bow,Replaces the ordinary bow shot with safe Ender Pearl teleportation.,"Bane of Netherspawn, Barrage, Bleed, Blindness, Boss Hunter, Brightness, Conservation, Cubism, Cull, Cure, Curse of Death, Darkness Arrows, Decapitator, Decay, Dragonfire Arrows, End Affinity, Explosive Arrows, Flame, Flare, Ghast, Hover, Infinity, Jumpshot, Lifesteal, Lingering, Longshot, Nightfall, Ninja, Penetration, Plunging Shot, Power, Punch, Skyhunter, Stun, Sureshot, Temper, Thrifty, Thunder, Venom, Village Defender, Weakening, Wisdom",I,🏹,bow,mainhand/bow/ender_bow.yml
+Bow,explosive_arrows,Explosive Arrows,Has a 3% / 5% / 7% chance to create a controlled explosion at impact.,"Ender Bow, Ghast",III,🏹 🎯,"bow, crossbow",mainhand/ranged/explosive_arrows.yml
+Bow,flare,Flare,Places a torch when the projectile impact position is valid and permitted.,Ender Bow,I,🏹,bow,mainhand/bow/flare.yml
+Bow,ghast,Ghast,Consumes a Fire Charge and replaces the shot with a controlled fireball.,"Barrage, Crucible, Dragonfire Arrows, Ender Bow, Explosive Arrows, Flame, Lingering, Multishot, Piercing, Punch",I,🏹 🎯,"bow, crossbow",mainhand/ranged/ghast.yml
+Bow,hamstring,Hamstring,Has a 10% / 15% / 20% chance to slow the target and reduce jumping.,—,III,🎯,crossbow,mainhand/crossbow/hamstring.yml
+Bow,hover,Hover,Has a 5% / 7.5% / 10% chance to apply short Levitation to the primary target.,Ender Bow,III,🏹 🎯,"bow, crossbow",mainhand/ranged/hover.yml
+Bow,jumpshot,Jumpshot,Deals 10% / 20% / 30% more direct projectile damage while the shooter is airborne.,Ender Bow,III,🏹 🎯,"bow, crossbow",mainhand/ranged/jumpshot.yml
+Bow,lingering,Lingering,Tipped projectiles have a 10% / 20% chance to create a lingering cloud.,"Ender Bow, Ghast",II,🏹 🎯,"bow, crossbow",mainhand/ranged/lingering.yml
+Bow,longshot,Longshot,Deals up to 10% / 20% / 30% more damage as projectile travel distance increases.,Ender Bow,III,🏹 🎯,"bow, crossbow",mainhand/ranged/longshot.yml
+Bow,nightfall,Nightfall,Deals 10% / 15% / 20% more direct projectile damage at night.,Ender Bow,III,🏹,bow,mainhand/bow/nightfall.yml
+Bow,penetration,Penetration,Ignores 10% / 15% / 20% of the target armour points only.,Ender Bow,III,🏹 🎯 🗡️,"bow, crossbow, spear",mainhand/ranged/penetration.yml
+Bow,plunging_shot,Plunging Shot,Deals 10% / 15% / 20% more damage to a target at least four blocks below the launch point.,Ender Bow,III,🏹,bow,mainhand/bow/plunging_shot.yml
+Bow,recoil,Recoil,Pushes the shooter backward with 0.30 / 0.45 / 0.60 force once per discharge.,—,III,🎯,crossbow,mainhand/crossbow/recoil.yml
+Bow,skyhunter,Skyhunter,Deals 10% / 15% / 20% more direct damage to genuinely airborne targets.,Ender Bow,III,🏹,bow,mainhand/bow/skyhunter.yml
+Bow,sureshot,Sureshot,Deals 10% / 20% / 30% more direct damage to targets at exactly full ordinary health.,Ender Bow,III,🏹,bow,mainhand/bow/sureshot.yml
+Bow,velocity,Velocity,Increases projectile speed by 15% / 30% / 45% without directly increasing damage.,—,III,🏹 🎯,"bow, crossbow",mainhand/ranged/velocity.yml
+Tool,aftershock,Aftershock,Has an 8% / 12% / 16% chance to break up to 8 / 16 / 24 nearby matching base-terrain blocks.,"Blast Mining, Fissure, Mass Excavate, Motherlode, Quarry, Tunnel Bore, Vein Miner",III,⛏️,pickaxe,tools/patterns/aftershock.yml
+Tool,blast_mining,Blast Mining,Has a 20% / 35% / 50% chance to break an eligible 3x3x3 region.,"Aftershock, Fissure, Mass Excavate, Motherlode, Quarry, Tunnel Bore, Vein Miner",III,⛏️,pickaxe,tools/patterns/blast_mining.yml
+Tool,canyon_dig,Canyon Dig,Cuts a three-block-wide strip extending 3 / 5 / 7 blocks forward.,"Mass Excavate, Terrain, Trench",III,🪏,shovel,tools/shovel/canyon_dig.yml
+Tool,clay_seeker,Clay Seeker,Each eligible clay block has a 25% / 50% / 75% chance to grant one bonus clay ball.,Silk Touch,III,🪏,shovel,tools/shovel/clay_seeker.yml
+Tool,deep_dive,Deep Dive,Adds 10% / 20% / 30% mining speed at Y -32 and below.,—,III,⛏️,pickaxe,tools/pickaxe/deep_dive.yml
+Tool,delver,Delver,Adds 10% / 20% / 30% mining speed from Y 0 through Y -31.,—,III,⛏️,pickaxe,tools/pickaxe/delver.yml
+Tool,dune_walker,Dune Walker,Grants Speed I / II / III while moving on eligible sand with the shovel in the main hand.,—,III,🪏,shovel,tools/shovel/dune_walker.yml
+Tool,fissure,Fissure,Mines a one-block-wide line extending 4 / 6 / 8 blocks forward.,"Aftershock, Blast Mining, Mass Excavate, Motherlode, Quarry, Tunnel Bore, Vein Miner",III,⛏️,pickaxe,tools/patterns/fissure.yml
+Tool,geode,Geode,Eligible source blocks have a 3% / 6% / 9% chance to grant one Amethyst Shard.,Silk Touch,III,⛏️,pickaxe,tools/pickaxe/geode.yml
+Tool,glass_breaker,Glass Breaker,Rapidly breaks configured glass blocks without generating bonus drops.,—,I,🪓 ⛏️ 🪏 🌾,"axe, pickaxe, shovel, hoe",tools/shared/glass_breaker.yml
+Tool,haste,Haste,Grants Haste I / II while the exact enchanted tool is held in the main hand.,—,II,🪓 ⛏️ 🪏 🌾,"axe, pickaxe, shovel, hoe",tools/shared/haste.yml
+Tool,mass_excavate,Mass Excavate,Breaks a 3x3 / 5x5 / 7x7 face parallel to the clicked block face.,"Aftershock, Blast Mining, Canyon Dig, Fissure, Motherlode, Quarry, Terrain, Trench, Tunnel Bore, Vein Miner",III,⛏️ 🪏 🌾,"pickaxe, shovel, hoe",tools/patterns/mass_excavate.yml
+Tool,motherlode,Motherlode,Mines up to 16 / 32 / 64 connected mineral-deposit blocks.,"Aftershock, Blast Mining, Fissure, Mass Excavate, Quarry, Tunnel Bore, Vein Miner",III,⛏️,pickaxe,tools/patterns/motherlode.yml
+Tool,nexus_tap,Nexus Tap,Each eligible ore restores 0.5 / 1 / 1.5 health and 1 / 1 / 2 food points.,—,III,⛏️,pickaxe,tools/pickaxe/nexus_tap.yml
+Tool,plow,Plow,Converts a one-block-wide line of 3 / 4 / 5 eligible blocks into farmland.,—,III,🌾,hoe,tools/hoe/plow.yml
+Tool,prospector,Prospector,Grants one bonus ordinary Minecraft XP for each eligible ore mined.,Silk Touch,I,⛏️,pickaxe,tools/pickaxe/prospector.yml
+Tool,prune,Prune,Adds independent bonus-apple and bonus-stick rolls to eligible leaves.,Silk Touch,III,🌾,hoe,tools/hoe/prune.yml
+Tool,quarry,Quarry,Mines a vertical column 3 / 6 / 9 blocks downward.,"Aftershock, Blast Mining, Fissure, Mass Excavate, Motherlode, Tunnel Bore, Vein Miner",III,⛏️,pickaxe,tools/patterns/quarry.yml
+Tool,reaper,Reaper,Harvests mature configured crops in a 3x3 / 5x5 / 7x7 area.,—,III,🌾,hoe,tools/hoe/reaper.yml
+Tool,replanter,Replanter,Consumes one valid planting item and replants each successfully harvested crop.,—,I,🌾,hoe,tools/hoe/replanter.yml
+Tool,silk_chest,Silk Chest,Packs a directly broken eligible chest with its contents preserved.,"Curse of Misfortune, Smelter",I,🪓 ⛏️ 🪏 🌾,"axe, pickaxe, shovel, hoe",tools/shared/silk_chest.yml
+Tool,silk_spawner,Silk Spawner,Gives a 25% chance to recover a directly broken eligible spawner.,"Curse of Misfortune, Smelter",I,⛏️,pickaxe,tools/pickaxe/silk_spawner.yml
+Tool,smelter,Smelter,Automatically smelts configured eligible drops without fuel or furnace XP.,"Silk Touch, Silk Chest, Silk Spawner",I,⛏️,pickaxe,tools/pickaxe/smelter.yml
+Tool,telekinesis,Telekinesis,"Sends eligible block, crop and qualifying enemy drops to the player inventory.",—,I,🪓 ⛏️ 🪏 🌾,"axe, pickaxe, shovel, hoe",tools/shared/telekinesis.yml
+Tool,terrain,Terrain,"Clears a one-block-thick, four-block-high 9 / 7 / 5 / 3 hill-cutting arch.","Canyon Dig, Mass Excavate, Trench",I,🪏,shovel,tools/shovel/terrain.yml
+Tool,treefeller,Treefeller,"Fells a validated tree, up to 128 trunk blocks and 128 associated canopy blocks.",—,I,🪓,axe,tools/axe/treefeller.yml
+Tool,trench,Trench,Mines a one-block-wide column 3 / 5 / 7 blocks downward.,"Canyon Dig, Mass Excavate, Terrain",III,🪏,shovel,tools/shovel/trench.yml
+Tool,tunnel_bore,Tunnel Bore,Mines a 3x3 tunnel extending 1 / 2 / 3 blocks forward.,"Aftershock, Blast Mining, Fissure, Mass Excavate, Motherlode, Quarry, Vein Miner",III,⛏️,pickaxe,tools/patterns/tunnel_bore.yml
+Tool,vein_miner,Vein Miner,Mines up to 5 / 8 / 11 connected blocks from the same ore family.,"Aftershock, Blast Mining, Fissure, Mass Excavate, Motherlode, Quarry, Tunnel Bore",III,⛏️,pickaxe,tools/patterns/vein_miner.yml
+Trident,abyssal,Abyssal,A sneak-armed throw teleports the player to a safe position beside the first impact.,Riptide,I,🔱,trident,trident/abyssal.yml
+Trident,contagion,Contagion,A thrown impact has a 5% / 10% chance to create a short Poison I cloud.,"Riptide, Venom",II,🔱,trident,trident/contagion.yml
+Trident,harpooning,Harpooning,"Adds 0.75 direct damage per level to qualifying melee, thrown and Riptide trident hits.",—,V,🔱,trident,trident/harpooning.yml
+Trident,infernus,Infernus,A directly struck entity is ignited for 3 / 4 / 5 seconds by a thrown trident.,Riptide,III,🔱,trident,trident/infernus.yml
+Trident,leviathan,Leviathan,Deals 5% / 10% / 15% more direct trident damage to configured bosses and elites.,—,III,🔱,trident,trident/leviathan.yml
+Trident,mariner,Mariner,Grants Dolphin’s Grace while submerged with the exact enchanted trident in the main hand.,—,I,🔱,trident,trident/mariner.yml
+Fishing,coral_finder,Coral Finder,A completed item catch has a 5% / 10% / 15% chance to add one configured sea-loot item.,—,III,🎣,fishing_rod,fishing/coral_finder.yml
+Fishing,curse_of_drowned,Curse of Drowned,A completed item catch has a 5% chance to be replaced by one normal Drowned.,—,I,🎣,fishing_rod,fishing/curse_of_drowned.yml
+Fishing,double_catch,Double Catch,A completed eligible item catch has a 10% / 15% / 20% chance to create an identical duplicate.,—,III,🎣,fishing_rod,fishing/double_catch.yml
+Fishing,mariners_wrath,Mariner’s Wrath,"During genuine rain or thunder, reduces fishing wait time by 15% / 25% / 35%.",—,III,🎣,fishing_rod,fishing/mariners_wrath.yml
+Fishing,river_master,River Master,Increases bobber launch velocity by 25% / 50% / 75%.,—,III,🎣,fishing_rod,fishing/river_master.yml
+Fishing,seasoned_angler,Seasoned Angler,Increases ordinary Minecraft XP from a successful item catch by 10% / 20% / 30%.,—,III,🎣,fishing_rod,fishing/seasoned_angler.yml
+Fishing,survivalist,Survivalist,Automatically converts explicitly approved caught raw fish into their cooked forms.,—,I,🎣,fishing_rod,fishing/survivalist.yml
+Shield,blast_ward,Blast Ward,Reduces qualifying blocked explosion damage by 15% / 20% / 25%.,—,III,🛡️,shield,offhand/shield/blast_ward.yml
+Shield,sentinel,Sentinel,Adds 3 / 4 / 5 effective armour while stationary and actively blocking.,—,III,🛡️,shield,offhand/shield/sentinel.yml
+Shield,stagger,Stagger,A blocked direct melee attack has a 10% / 15% / 20% chance to slow the attacker.,—,III,🛡️,shield,offhand/shield/stagger.yml
+Shield,steady_guard,Steady Guard,Reduces residual damage from a successfully blocked attack by 5% / 10% / 15%.,—,III,🛡️,shield,offhand/shield/steady_guard.yml
+Elytra,aero_shield,Aero Shield,Reduces qualifying incoming damage by 10% / 15% / 20% while genuinely gliding.,—,III,🪽,elytra,elytra/aero_shield.yml
+Elytra,air_cushion,Air Cushion,Reduces qualifying landing damage after genuine elytra flight by 20% / 35% / 50%.,—,III,🪽,elytra,elytra/air_cushion.yml
+Elytra,gale_strike,Gale Strike,A sufficiently fast landing creates a four-block-radius shockwave dealing 4 / 6 / 8 secondary damage.,—,III,🪽,elytra,elytra/gale_strike.yml
+Elytra,rocket_saver,Rocket Saver,Has a 20% / 40% / 60% chance not to consume a firework used for genuine elytra propulsion.,—,III,🪽,elytra,elytra/rocket_saver.yml
+Universal,curse_of_breaking,Curse of Breaking,Has a 10% / 20% / 30% chance to consume 1 / 2 / 3 additional durability when the item loses durability.,Unbreaking,III,⛏️ 🪓 🌾 🪏 ⚔️ 🗡️ 🪖 🥋 👖 🥾 🔱 🏹 🎯 ✂️ 🖌️ 🛡️ 🎣 🔥 🪽 🔨,"pickaxe, axe, hoe, shovel, sword, spear, helmet, chestplate, leggings, boots, trident, bow, crossbow, shears, brush, shield, fishing_rod, flint_and_steel, elytra, mace",global/curse_of_breaking.yml
+Universal,curse_of_fragility,Curse of Fragility,Prevents the item from being used in an anvil or grindstone.,—,I,⛏️ 🪓 🌾 🪏 ⚔️ 🗡️ 🪖 🥋 👖 🥾 🔱 🏹 🎯 ✂️ 🖌️ 🛡️ 🎣 🔥 🪽 🔨,"pickaxe, axe, hoe, shovel, sword, spear, helmet, chestplate, leggings, boots, trident, bow, crossbow, shears, brush, shield, fishing_rod, flint_and_steel, elytra, mace",global/curse_of_fragility.yml
+Universal,curse_of_mediocrity,Curse of Mediocrity,Has a 15% / 30% / 45% chance to remove all enchantments from eligible block or creature item drops.,—,III,⛏️ 🪓 🌾 🪏 ⚔️ 🗡️ 🪖 🥋 👖 🥾 🔱 🏹 🎯 ✂️ 🖌️ 🛡️ 🎣 🔥 🪽 🔨,"pickaxe, axe, hoe, shovel, sword, spear, helmet, chestplate, leggings, boots, trident, bow, crossbow, shears, brush, shield, fishing_rod, flint_and_steel, elytra, mace",global/curse_of_mediocrity.yml
+Universal,curse_of_misfortune,Curse of Misfortune,Has a 7% / 14% / 21% chance for an eligible block or creature to produce no item drops or XP.,"Fortune, Looting, Silk Chest, Silk Spawner",III,⛏️ 🪓 🌾 🪏 ⚔️ 🗡️ 🪖 🥋 👖 🥾 🔱 🏹 🎯 ✂️ 🖌️ 🛡️ 🎣 🔥 🪽 🔨,"pickaxe, axe, hoe, shovel, sword, spear, helmet, chestplate, leggings, boots, trident, bow, crossbow, shears, brush, shield, fishing_rod, flint_and_steel, elytra, mace",global/curse_of_misfortune.yml
+Universal,rejuvenation,Rejuvenation,Slowly regenerates an average of 0.1 / 0.2 / 0.3 durability per second while the item is actively equipped or held.,Mending,III,⛏️ 🪓 🌾 🪏 ⚔️ 🗡️ 🪖 🥋 👖 🥾 🔱 🏹 🎯 ✂️ 🖌️ 🛡️ 🎣 🔥 🪽 🔨,"pickaxe, axe, hoe, shovel, sword, spear, helmet, chestplate, leggings, boots, trident, bow, crossbow, shears, brush, shield, fishing_rod, flint_and_steel, elytra, mace",global/rejuvenation.yml
+Universal,restore,Restore,Has a 25% / 30% / 35% chance to save the item from breaking and restore it to 20% / 25% / 30% remaining durability. It is not consumed and may activate repeatedly.,—,III,⛏️ 🪓 🌾 🪏 ⚔️ 🗡️ 🪖 🥋 👖 🥾 🔱 🏹 🎯 ✂️ 🖌️ 🛡️ 🎣 🔥 🪽 🔨,"pickaxe, axe, hoe, shovel, sword, spear, helmet, chestplate, leggings, boots, trident, bow, crossbow, shears, brush, shield, fishing_rod, flint_and_steel, elytra, mace",global/restore.yml
+Universal,soulbound,Soulbound,Keeps the exact item with its owner when they die.,Curse of Vanishing,I,⛏️ 🪓 🌾 🪏 ⚔️ 🗡️ 🪖 🥋 👖 🥾 🔱 🏹 🎯 ✂️ 🖌️ 🛡️ 🎣 🔥 🪽 🔨,"pickaxe, axe, hoe, shovel, sword, spear, helmet, chestplate, leggings, boots, trident, bow, crossbow, shears, brush, shield, fishing_rod, flint_and_steel, elytra, mace",global/soulbound.yml

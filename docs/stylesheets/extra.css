@@ -1,5 +1,19 @@
 /* Eulogia Wiki dark documentation theme */
 
+/* Wide layout, but keep comfortable margins */
+.md-grid {
+    max-width: none;
+    width: calc(100% - 4rem);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .md-grid {
+        width: calc(100% - 2rem);
+    }
+}
+
 [data-md-color-scheme="slate"] {
     --md-hue: 220;
 
