@@ -10,9 +10,9 @@ Every enchantment on this page can be applied to **Boots** equipment, so the com
 | **Curse of Fragility** | Prevents the item from being used in an anvil or grindstone. | I | — |
 | **Curse of Mediocrity** | Has a 15% / 30% / 45% chance to remove all enchantments from eligible block or creature item drops. | III | — |
 | **Curse of Misfortune** | Has a 7% / 14% / 21% chance for an eligible block or creature to produce no item drops or XP. | III | Fortune, Looting, Silk Chest, Silk Spawner |
-| <span class="enchant-name"><img src="../../assets/enchantments/elemental_protection.webp" alt="" class="enchant-icon"> <strong>Elemental Protection</strong></span> | Reduces qualifying magical and elemental damage by 10% / 15% / 20%. | III | — |
-| <span class="enchant-name"><img src="../../assets/enchantments/feather_step.webp" alt="" class="enchant-icon"> <strong>Feather Step</strong></span> | Prevents trampling farmland, turtle eggs and similar fragile blocks. | I | — |
-| <span class="enchant-name"><img src="../../assets/enchantments/grounded_heal.webp" alt="" class="enchant-icon"> <strong>Grounded Heal</strong></span> | While sneaking outside combat, restores one health every 4 / 3 / 2 seconds. | III | — |
+| **Elemental Protection** | Reduces qualifying magical and elemental damage by 10% / 15% / 20%. | III | — |
+| **Feather Step** | Prevents trampling farmland, turtle eggs and similar fragile blocks. | I | — |
+| **Grounded Heal** | While sneaking outside combat, restores one health every 4 / 3 / 2 seconds. | III | — |
 | **Lava Walker** | Temporarily converts eligible surface lava into magma in a 2 / 3 / 4 block radius. | III | — |
 | **Leaping** | Grants Jump Boost I, primarily allowing fences and similar 1.5-block obstacles to be cleared. | I | — |
 | **Reinforced** | Adds one armour toughness while equipped in the correct slot. | I | — |

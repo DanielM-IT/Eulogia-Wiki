@@ -224,7 +224,7 @@ def complete_table(rows: list[dict[str, str]]) -> str:
                 render_name(row, "../assets"),
                 escape_table(row["Summary"]),
                 escape_table(row["Max Level"]),
-                render_targets(row["Targets"], "../assets"),
+                render_targets(row["Targets"], "../../assets"),
                 render_conflicts(row),
             ]) + " |"
         )

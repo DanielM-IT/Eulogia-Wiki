@@ -26,10 +26,10 @@ Every enchantment on this page can be applied to **Crossbow** equipment, so the 
 | **Decapitator** | Eligible defeated entities have a 1% / 2% / 3% chance to drop their head. | III | Ender Bow |
 | **Decay** | Has a 4% / 7% / 10% chance to apply Wither I for 3 / 4 / 5 seconds. | III | Ender Bow |
 | **Dragonfire Arrows** | Has a 4% / 7% / 10% chance to create a temporary damaging Dragonfire area at impact. | III | Crucible, Ender Bow, Ghast |
-| <span class="enchant-name"><img src="../../assets/enchantments/end_affinity.webp" alt="" class="enchant-icon"> <strong>End Affinity</strong></span> | Deals 20% more direct damage to configured End-origin creatures. | I | Ender Bow |
-| <span class="enchant-name"><img src="../../assets/enchantments/explosive_arrows.webp" alt="" class="enchant-icon"> <strong>Explosive Arrows</strong></span> | Has a 3% / 5% / 7% chance to create a controlled explosion at impact. | III | Ender Bow, Ghast |
-| <span class="enchant-name"><img src="../../assets/enchantments/ghast.webp" alt="" class="enchant-icon"> <strong>Ghast</strong></span> | Consumes a Fire Charge and replaces the shot with a controlled fireball. | I | <details class="conflict-details"><summary><strong>⚠ 10 conflicts</strong><br><em>view list</em></summary><div class="conflict-list">Barrage, Crucible, Dragonfire Arrows, Ender Bow, Explosive Arrows, Flame, Lingering, Multishot, Piercing, Punch</div></details> |
-| <span class="enchant-name"><img src="../../assets/enchantments/hamstring.webp" alt="" class="enchant-icon"> <strong>Hamstring</strong></span> | Has a 10% / 15% / 20% chance to slow the target and reduce jumping. | III | — |
+| **End Affinity** | Deals 20% more direct damage to configured End-origin creatures. | I | Ender Bow |
+| **Explosive Arrows** | Has a 3% / 5% / 7% chance to create a controlled explosion at impact. | III | Ender Bow, Ghast |
+| **Ghast** | Consumes a Fire Charge and replaces the shot with a controlled fireball. | I | <details class="conflict-details"><summary><strong>⚠ 10 conflicts</strong><br><em>view list</em></summary><div class="conflict-list">Barrage, Crucible, Dragonfire Arrows, Ender Bow, Explosive Arrows, Flame, Lingering, Multishot, Piercing, Punch</div></details> |
+| **Hamstring** | Has a 10% / 15% / 20% chance to slow the target and reduce jumping. | III | — |
 | **Hover** | Has a 5% / 7.5% / 10% chance to apply short Levitation to the primary target. | III | Ender Bow |
 | **Jumpshot** | Deals 10% / 20% / 30% more direct projectile damage while the shooter is airborne. | III | Ender Bow |
 | **Lifesteal** | Has a 12% / 16% / 20% chance to heal 0.5 / 0.75 / 1 health from the original direct hit. | III | Ender Bow |
