@@ -30,7 +30,7 @@ TARGETS = {
     "hoe": ("Hoe", "hoe.webp", "🌾"),
     "shovel": ("Shovel", "shovel.webp", "🪏"),
     "sword": ("Sword", "sword.webp", "⚔️"),
-    "spear": ("Spear", "spear.png", "🗡️"),
+    "spear": ("Spear", "spear.webp", "🗡️"),
     "helmet": ("Helmet", "helmet.webp", "🪖"),
     "chestplate": ("Chestplate", "chestplate.webp", "🥋"),
     "leggings": ("Leggings", "leggings.webp", "👖"),
@@ -178,9 +178,7 @@ def render_name(row: dict[str, str], asset_prefix: str) -> str:
 
 def render_targets(raw_targets: str, asset_prefix: str) -> str:
     rendered: list[str] = []
-    for target in [part.strip() for part in raw_targets.split(",") if part.strip()]:
-        if target in HIDDEN_COMPATIBILITY_TARGETS:
-            continue
+    for target in [part.strip() for part in raw_targets.split(",") if part.strip()]:`r`n        if target in HIDDEN_COMPATIBILITY_TARGETS:`r`n            continue
         label, filename, fallback = TARGETS[target]
         image_path = ITEMS_DIR / filename
         if image_path.exists():
