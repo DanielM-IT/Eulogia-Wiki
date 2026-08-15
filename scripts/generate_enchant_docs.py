@@ -30,7 +30,7 @@ TARGETS = {
     "hoe": ("Hoe", "hoe.webp", "🌾"),
     "shovel": ("Shovel", "shovel.webp", "🪏"),
     "sword": ("Sword", "sword.webp", "⚔️"),
-    "spear": ("Spear", "spear.png", "🗡️"),
+    "spear": ("Spear", "spear.webp", "🗡️"),
     "helmet": ("Helmet", "helmet.webp", "🪖"),
     "chestplate": ("Chestplate", "chestplate.webp", "🥋"),
     "leggings": ("Leggings", "leggings.webp", "👖"),
