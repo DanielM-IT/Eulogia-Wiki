@@ -93,3 +93,16 @@
     color: var(--md-default-fg-color--light);
 }
 .exclusive-conflict summary strong { color: var(--md-accent-fg-color); }
+
+/* Universal enchantments: avoid rendering every item sprite */
+.universal-compat {
+    display: inline-block;
+    padding: 2px 7px;
+    border: 1px solid rgba(89, 168, 255, 0.38);
+    border-radius: 999px;
+    background: rgba(89, 168, 255, 0.08);
+    color: var(--md-default-fg-color);
+    font-size: 0.82rem;
+    font-weight: 600;
+    white-space: nowrap;
+}

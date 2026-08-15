@@ -192,6 +192,12 @@ def render_targets(raw_targets: str, asset_prefix: str) -> str:
     return " ".join(rendered) or "—"
 
 
+def render_compatibility(row: dict[str, str], asset_prefix: str) -> str:
+    if row["Category"] == "Universal":
+        return '<span class="universal-compat" title="Compatible with all eligible items">∞ All Items</span>'
+    return render_targets(row["Targets"], asset_prefix)
+
+
 def render_conflicts(row: dict[str, str]) -> str:
     conflicts = conflicts_for(row)
     if not conflicts:
@@ -228,7 +234,7 @@ def complete_table(rows: list[dict[str, str]]) -> str:
                 render_name(row, "../assets"),
                 escape_table(row["Summary"]),
                 escape_table(row["Max Level"]),
-                render_targets(row["Targets"], "../../assets"),
+                render_compatibility(row, "../../assets"),
                 render_conflicts(row),
             ]) + " |"
         )
